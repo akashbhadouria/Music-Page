@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #fdfefe;
+        
+      }
+      #top-section {
+        max-width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+      #top-section > .heading {
+        max-width: 90%;
+        margin: auto;
+    
+      } 
+      
+      .heading {
+        max-width: 72%;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+  
+      }
+
+      #music {
+      
+        display: grid;
+        max-width: 90%;
+        margin: auto;
+         margin-left: -13px;
+        grid-template-columns: repeat(4,232px);
+        grid-template-rows: repeat(1, 250px);
+        grid-template-areas: 
+        "a b c d";
+        gap: 40px;
+        margin-top: 50px;
+      }
+
+    
+      .b1 {
+        
+        grid-area: "a";
+      }
+      .b2 {
+        
+        grid-area: "b";
+      }
+      .b3 {
+        
+        grid-area: "c";
+      }
+      .b4 {
+       
+        grid-area: "d";
+      }
+     
+      #pricing {
+        max-width: 80%;
+        margin: auto;
+        display: grid;
+        grid-auto-columns: repeat(3, 0.3fr);
+        grid-template-rows: repeat(1,290px);
+        grid-template-areas: 
+        "1 2 3";
+        gap: 20px;
+        margin-top: 50px;
+      
+      }
+      #pricing > div {
+     
+        background-color: white;
+        padding:0px 15px;
+        border-radius: 15px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      #pricing > div > .line {
+      
+        width: 100%;
+        margin: auto;
+        border: 1px solid #a4a4d2;
+      }
+      #pricing h2 {
+        color: #5353bc;
+      }
+      #pricing h6 {
+        margin-top: 15px;
+      }
+      ul {
+        list-style: square;
+        color: #589bb1;
+      }
+      #pricing h2 {
+        margin-top: -10px;
+      }
+      
+
+      .c1 {
+        grid-area: "1";
+      }
+
+      .c2 {
+        grid-area: "2";
+      }
+
+      .c3 {
+        grid-area: "3";
+      }
+
+      hr {
+        color: #a4a4d2;
+      }
+
+
+      button {
+        /* border:1px solid #5353bc; */
+        padding: 6px 13px;
+        background-color: #5353bc;
+        border-radius: 10px;
+        color: white;
+      }
+  
+      /* Medium screens - take min width and max width according to your screen sizes */
+      @media all and (min-width: 401px) and (max-width: 720px) {
+       #music {
+        grid-template-columns: repeat(2,230px);
+        grid-template-rows: repeat(2,250px);
+        grid-template-areas: 
+        "b1 b2"
+        "b3 b4";
+       }
+       #pricing {
+        grid-auto-columns: repeat(2, 0.3fr);
+        grid-template-rows: repeat(2,290px);
+        grid-template-areas: "c1 c2"
+        "c3 ...";
+       }
+       #pricing > h5, #pricing > h2, #pricing > li > p{
+        font-size: 50%;
+       } 
+       
+       #pricing > button  {
+         width: 30%;
+       }
+      }
+     
+      
+
+      /* Small screens - take min width and max width according to your screen sizes */
+
+      @media all and (min-width: 81px) and (max-width: 400px) {
+        #music {
+        grid-template-columns: repeat(1,230px);
+        grid-template-rows: repeat(4,250px);
+        grid-template-areas: 
+        "b1"
+        "b2"
+        "b3"
+        "b4";
+        margin-left: 25px;
+       }
+
+       #music > h5, #music > p, #music > img {
+         font-size: 50%;
+       }
+       #pricing {
+        grid-auto-columns: repeat(1, 0.3fr);
+        grid-template-rows: repeat(3,290px);
+        grid-template-areas: "c1"
+        "c2"
+        "c3";
+       }
+       #pricing > h5, #pricing > h2, #pricing > li > p{
+        font-size: 50%;
+       } 
+       
+       #pricing > button  {
+         width: 30%;
+       }
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Do not change class names and IDs -->
+
+    <!-- Top section -->
+    <div id="top-section">
+      <div class="heading">
+        <h1>Get ready for seamless online music</h1>
+        <p>
+          Utrust is a seamless integration that gives e-commerce businesses the
+          power to accept digital currencies - and get all the benefits you
+          can’t with just traditional payment methods.
+        </p>
+      </div>
+
+      <!-- Music cards -->
+      <div id="music">
+        <div class="b1">
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/1_313769.jpeg" alt="">
+          <h5>Offline mode.</h5>
+          <p>Save and listen anywhere.</p>
+        </div> 
+        <div class="b2">
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/2_656773.jpeg" alt="">
+          <h5>Offline mode.</h5>
+          <p>Save and listen anywhere.</p>
+        </div>
+        <div class="b3">
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/3_837237.jpeg" alt="">
+          <h5>Offline mode.</h5>
+          <p>Save and listen anywhere.</p>
+        </div>
+        <div class="b4">
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/4_842327.jpeg" alt="">
+          <h5>Offline mode.</h5>
+          <p>Save and listen anywhere.</p>
+        </div>
+      </div> 
+    </div>
+
+    <!-- bottom section -->
+
+    <div class="heading">
+      <h1>Listen free or subscribe to MusicLab Premium.</h1>
+      <p>
+        Utrust is a seamless integration that gives e-commerce businesses the
+        power to accept digital currencies - and get all the benefits you can’t
+        with just traditional payment methods.
+      </p>
+    </div>
+
+    <!-- Pricing cards -->
+    <div id="pricing">
+      <div class="c1">
+        <h6>MusicBox Free.</h6>
+        <h2>$0.00</h2>  
+        <hr>
+        <!-- <div class="line"></div> -->
+        <ul>
+          <li><p>Online Listening</p></li>
+          <li><p>Regular Audio</p></li>
+          <li><p>With Advertising</p></li>
+          <li><p>30 Skips per day</p></li>
+        </ul>
+        <button>Get Free</button>
+      </div>
+      <div class="c2">
+        <h6>MusicBox Free.</h6>
+        <!-- #6d6dc6 -->
+      <h2>$0.00</h2>  
+      <hr>
+      <!-- <div class="line"></div> -->
+      <ul>
+        <li><p>Online Listening</p></li>
+        <li><p>Regular Audio</p></li>
+        <li><p>With Advertising</p></li>
+        <li><p>30 Skips per day</p></li>
+      </ul>
+      <button>Get Free</button>
+      </div>
+      <div class="c3">
+        <h6>MusicBox Free.</h6>
+        <!-- #6d6dc6 -->
+      <h2>$0.00</h2>  
+      <hr>
+      <!-- <div class="line"></div> -->
+      <ul>
+        <li><p>Online Listening</p></li>
+          <li><p>Regular Audio</p></li>
+          <li><p>With Advertising</p></li>
+          <li><p>30 Skips per day</p></li>
+      </ul>
+      <button>Get Free</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
